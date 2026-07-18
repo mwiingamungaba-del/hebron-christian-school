@@ -1,0 +1,46 @@
+.mobile-only { display: none; }
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid,
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    right: 1rem;
+    padding: 1rem;
+    background: #1e3a8a;
+    border-radius: 0.8rem;
+    width: min(220px, 90vw);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .stats-grid,
+  .card-grid,
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

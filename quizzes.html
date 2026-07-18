@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzes | Teacher Portal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="../index.html">Hebron LMS</a>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="upload-notes.html">Upload Notes</a>
+          <a href="assignments.html">Assignments</a>
+          <a class="active" href="quizzes.html">Quizzes</a>
+          <a href="students.html">Students</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="../login.html" data-logout>Logout</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Teacher Portal</p>
+            <h1>Create Quizzes</h1>
+          </div>
+        </div>
+        <section class="card">
+          <form>
+            <label>Question</label>
+            <input type="text" placeholder="Enter quiz question" />
+            <label>Question Type</label>
+            <select><option>Multiple Choice</option><option>True/False</option><option>Short Answer</option></select>
+            <button class="btn btn-primary" type="submit">Save Quiz</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard | Hebron Christian School</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="../index.html">Hebron LMS</a>
+        <nav class="sidebar-nav">
+          <a class="active" href="dashboard.html">Dashboard</a>
+          <a href="upload-notes.html">Upload Notes</a>
+          <a href="assignments.html">Assignments</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="students.html">Students</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="../login.html" data-logout>Logout</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Teacher Portal</p>
+            <h1>Welcome back, <span data-role>Teacher</span></h1>
+          </div>
+        </div>
+        <section class="kpi-grid">
+          <div class="kpi-card"><p>Students</p><h3>120</h3></div>
+          <div class="kpi-card"><p>Assignments</p><h3>8</h3></div>
+          <div class="kpi-card"><p>Notes</p><h3>21</h3></div>
+          <div class="kpi-card"><p>Average Grade</p><h3>84%</h3></div>
+        </section>
+        <section class="card">
+          <h3>Assigned Subjects</h3>
+          <ul id="teacher-subjects"></ul>
+        </section>
+        <section class="card">
+          <h3>Teacher Announcements</h3>
+          <p>New online resources have been uploaded for Grade 10 science learners.</p>
+        </section>
+      </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

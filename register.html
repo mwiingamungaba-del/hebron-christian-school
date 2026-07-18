@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Hebron Christian School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Hebron Christian School</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="container auth-grid">
+        <div class="card auth-card">
+          <p class="eyebrow">Join Hebron</p>
+          <h1>Create your account.</h1>
+          <form id="register-form" class="auth-form">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Jane Doe" required />
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required />
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Choose a strong password" required />
+            <label>Role</label>
+            <select name="role">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="admin">Administrator</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+          <p class="form-link">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

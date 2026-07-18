@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Notes | Teacher Portal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="../index.html">Hebron LMS</a>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a class="active" href="upload-notes.html">Upload Notes</a>
+          <a href="assignments.html">Assignments</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="students.html">Students</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="../login.html" data-logout>Logout</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Teacher Portal</p>
+            <h1>Upload Notes</h1>
+          </div>
+        </div>
+        <section class="card">
+          <form>
+            <label>Title</label>
+            <input type="text" placeholder="Lesson title" />
+            <label>File Type</label>
+            <select><option>PDF</option><option>Word</option><option>PowerPoint</option><option>Image</option><option>Video</option></select>
+            <label>Upload</label>
+            <input type="file" />
+            <button class="btn btn-primary" type="submit">Publish</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

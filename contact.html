@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Hebron Christian School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Hebron Christian School</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="login.html" class="btn btn-outline">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container">
+          <p class="eyebrow">Get in Touch</p>
+          <h1>We are here to support your school journey.</h1>
+          <p>Reach out with questions about admission, classes, or student support.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="card">
+            <h3>School Address</h3>
+            <p>18 Faith Road, Hebron District</p>
+            <p>Phone: +234 803 000 0000</p>
+            <p>Email: admissions@hebronchristianschool.org</p>
+          </div>
+          <form class="card form-card" id="contact-form">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required />
+            <label>Message</label>
+            <textarea rows="5" placeholder="How can we help?" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Hebron Christian School. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

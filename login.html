@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Hebron Christian School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Hebron Christian School</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="container auth-grid">
+        <div class="card auth-card">
+          <p class="eyebrow">Welcome Back</p>
+          <h1>Sign in to continue learning.</h1>
+          <form id="login-form" class="auth-form">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required />
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required />
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <p class="form-link"><a href="#">Forgot password?</a></p>
+          <p class="form-link">No account? <a href="register.html">Create one</a></p>
+          <div class="demo-box">
+            <p>Demo accounts: student@hebron.org, teacher@hebron.org, admin@hebron.org</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
