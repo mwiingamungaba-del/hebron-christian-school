@@ -26,27 +26,21 @@
           <p class="eyebrow">Join Hebron</p>
           <h1>Create your account.</h1>
           <form id="register-form" class="auth-form">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="2" />
-            <small class="form-help">At least 2 characters</small>
+            <label for="register-name">Full Name</label>
+            <input type="text" id="register-name" name="name" placeholder="Jane Doe" required minlength="2" />
             
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            <small class="form-help">We'll use this to verify your account</small>
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" name="email" placeholder="you@example.com" required />
             
-            <label for="password">Password</label>
+            <label for="register-password">Password</label>
             <div class="password-field">
-              <input type="password" id="password" name="password" placeholder="Choose a strong password" required minlength="6" />
-              <button type="button" class="toggle-password" aria-label="Toggle password visibility">👁️</button>
+              <input type="password" id="register-password" name="password" placeholder="Choose a strong password" required minlength="6" />
+              <button type="button" class="toggle-password" data-target="register-password" aria-label="Toggle password visibility">👁️</button>
             </div>
             <small class="form-help">At least 6 characters</small>
             
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
-            <small class="form-help" id="password-match-help"></small>
-            
-            <label for="role">Role</label>
-            <select id="role" name="role" required>
+            <label for="register-role">Role</label>
+            <select id="register-role" name="role" required>
               <option value="">Select your role</option>
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
@@ -62,7 +56,7 @@
             
             <div class="checkbox-field">
               <input type="checkbox" id="terms" name="terms" required />
-              <label for="terms" style="display: inline; margin-left: 0.5rem;">I agree to the Terms of Service</label>
+              <label for="terms" style="display: inline; margin-left: 0.5rem; font-weight: normal;">I agree to the <a href="#" title="Terms of Service">Terms of Service</a></label>
             </div>
             
             <button type="submit" class="btn btn-primary">Register</button>
