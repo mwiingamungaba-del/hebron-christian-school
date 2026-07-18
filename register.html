@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register | Hebron Christian School</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header class="site-header">
@@ -26,26 +26,54 @@
           <p class="eyebrow">Join Hebron</p>
           <h1>Create your account.</h1>
           <form id="register-form" class="auth-form">
-            <label>Full Name</label>
-            <input type="text" name="name" placeholder="Jane Doe" required />
-            <label>Email</label>
-            <input type="email" name="email" placeholder="you@example.com" required />
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Choose a strong password" required />
-            <label>Role</label>
-            <select name="role">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="2" />
+            <small class="form-help">At least 2 characters</small>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <small class="form-help">We'll use this to verify your account</small>
+            
+            <label for="password">Password</label>
+            <div class="password-field">
+              <input type="password" id="password" name="password" placeholder="Choose a strong password" required minlength="6" />
+              <button type="button" class="toggle-password" aria-label="Toggle password visibility">👁️</button>
+            </div>
+            <small class="form-help">At least 6 characters</small>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
+            <small class="form-help" id="password-match-help"></small>
+            
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="">Select your role</option>
               <option value="student">Student</option>
               <option value="teacher">Teacher</option>
               <option value="admin">Administrator</option>
             </select>
+            
+            <label for="academic-level">Academic Level</label>
+            <select id="academic-level" name="academic-level" required>
+              <option value="">Select academic level</option>
+              <option value="primary">Primary School (Grades 1-7)</option>
+              <option value="secondary">Secondary School (Forms 1-4)</option>
+            </select>
+            
+            <div class="checkbox-field">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms" style="display: inline; margin-left: 0.5rem;">I agree to the Terms of Service</label>
+            </div>
+            
             <button type="submit" class="btn btn-primary">Register</button>
           </form>
+          
           <p class="form-link">Already have an account? <a href="login.html">Login</a></p>
         </div>
       </div>
     </main>
 
-    <script src="js/app.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
   </body>
 </html>
